@@ -26,8 +26,8 @@ jobs:
           node-version: 22
       - name: Install dependencies
         run: npm install
-      - name: Run tests
-        run: npm test
+      - name: Run tests (allow repository with no test files)
+        run: npm test -- --passWithNoTests
       - name: Build app
         run: npm run build
       - name: Configure Pages
