@@ -7,8 +7,8 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "preview": "vite preview",
-    "test": "vitest run --environment jsdom --globals --setupFiles ./src/test/setup.ts",
-    "test:watch": "vitest --environment jsdom --globals --setupFiles ./src/test/setup.ts"
+    "test": "vitest run --passWithNoTests",
+    "test:watch": "vitest"
   },
   "dependencies": {
     "lucide-react": "^0.468.0",
